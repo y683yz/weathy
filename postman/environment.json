@@ -1,0 +1,19 @@
+{
+	"id": "b68289af-7bc7-4ac0-9ec3-7a47ba071ee1",
+	"name": "Fun Weathy API",
+	"values": [
+		{
+			"key": "WeathyBaseUrl",
+			"value": "http://localhost:5200",
+			"enabled": true
+		},
+		{
+			"key": "WeathyCity",
+			"value": "Helsinki",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-04-18T13:14:23.785Z",
+	"_postman_exported_using": "Postman/8.1.0"
+}

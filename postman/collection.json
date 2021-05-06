@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "7243cad7-2c82-4ba1-960b-1a965bceadf8",
+		"name": "Fun Weathy API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{WeathyBaseUrl}}/health",
+					"host": [
+						"{{WeathyBaseUrl}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get weather forecast (v1)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{WeathyBaseUrl}}/api/v1/weather",
+					"host": [
+						"{{WeathyBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get weather forecast (v2)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{WeathyBaseUrl}}/api/v2/weather?city={{WeathyCity}}",
+					"host": [
+						"{{WeathyBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "{{WeathyCity}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+
+  weathy:
+    image: weathy:latest
+    build:
+      context: src
+      dockerfile: Dockerfile
+    ports:
+    - 5200:5200
+    environment:
+      PORT: 5200
+      WEATHY_ENABLE_SWAGGER_UI: "true"

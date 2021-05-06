@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+
+  weathy:
+    image: weathy:latest
+    build:
+      context: src
+      dockerfile: Dockerfile
+    environment:
+      WEATHY_ENABLE_SWAGGER_UI: "true"
